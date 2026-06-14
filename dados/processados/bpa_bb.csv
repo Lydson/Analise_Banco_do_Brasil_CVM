@@ -1,4 +1,4 @@
-CNPJ_CIA,DT_REFER,VERSAO,DENOM_CIA,CD_CVM,GRUPO_DFP,MOEDA,ESCALA_MOEDA,ORDEM_EXERC,DT_FIM_EXERC,CD_CONTA,DS_CONTA,VL_CONTA,ST_CONTA_FIXA
+cnpj_cia,dt_refer,versao,denom_cia,cd_cvm,grupo_dfp,moeda,escala_moeda,ordem_exerc,dt_fim_exerc,cd_conta,ds_conta,vl_conta,st_conta_fixa
 00.000.000/0001-91,2016-12-31,3,BCO BRASIL S.A.,1023,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,PENÚLTIMO,2015-12-31,1,Ativo Total,1388864529.0,S
 00.000.000/0001-91,2016-12-31,3,BCO BRASIL S.A.,1023,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,ÚLTIMO,2016-12-31,1,Ativo Total,1387215686.0,S
 00.000.000/0001-91,2016-12-31,3,BCO BRASIL S.A.,1023,DF Consolidado - Balanço Patrimonial Ativo,REAL,MIL,PENÚLTIMO,2015-12-31,1.01,Caixa e Equivalentes de Caixa,102700113.0,S
