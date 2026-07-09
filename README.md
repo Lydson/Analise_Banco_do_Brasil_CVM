@@ -160,4 +160,4 @@ tendência mesmo que os valores absolutos de 2016-2019 difiram.
 
 **Lydson** — Analista de Operações com foco em dados financeiros
 
-[GitHub](https://github.com/Lydson) · [LinkedIn]([https://linkedin.com/in/...](https://www.linkedin.com/in/lydson/))
+[GitHub](https://github.com/Lydson) · [LinkedIn](https://www.linkedin.com/in/lydson/)
