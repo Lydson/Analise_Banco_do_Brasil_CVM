@@ -8,7 +8,7 @@ financeira do Banco do Brasil S.A. na última década.
 
 ![Dashboard Análise BB](docs/dashboard_preview.png)
 
-🔗 [Acessar dashboard no Looker Studio]([https://datastudio.google.com/...](https://datastudio.google.com/reporting/982b0961-5f4f-45c1-9e86-4c52d3005031))
+🔗 [Acessar dashboard no Looker Studio](https://datastudio.google.com/reporting/982b0961-5f4f-45c1-9e86-4c52d3005031)
 
 ---
 
