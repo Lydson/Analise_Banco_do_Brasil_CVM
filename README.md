@@ -145,6 +145,6 @@ Nossa aproximação via dados públicos converge com os valores oficiais a parti
 
 ## Autor
 
-**Lydson** — Analista de Operações com foco em dados financeiros
+**Made by Lydson**
 
 [GitHub](https://github.com/Lydson) · [LinkedIn](https://www.linkedin.com/in/lydson/)
