@@ -1,8 +1,6 @@
 # Análise Financeira: Banco do Brasil (2016-2025)
 
-Projeto de análise de dados aplicado a finanças, usando dados públicos
-da CVM (Comissão de Valores Mobiliários) para estudar a evolução
-financeira do Banco do Brasil S.A. na última década.
+Projeto de análise de dados aplicado a finanças, usando dados públicos da CVM (Comissão de Valores Mobiliários) para estudar a evolução financeira do Banco do Brasil S.A. na última década.
 
 ## Dashboard
 
@@ -65,26 +63,21 @@ Aplicar SQL, modelagem de dados e visualização para responder:
 [Portal de Dados Abertos da CVM](https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/DFP/DADOS/)
 — Demonstrações Financeiras Padronizadas (DFP), 2016-2025.
 
-Dados extraídos automaticamente via Python (`scripts/baixar_dados_cvm.py`),
-filtrados para o Banco do Brasil S.A. (CNPJ 00.000.000/0001-91) e
-carregados em 3 tabelas PostgreSQL: `bpa`, `bpp`, `dre`.
+Dados extraídos automaticamente via Python (`scripts/baixar_dados_cvm.py`), filtrados para o Banco do Brasil S.A. (CNPJ 00.000.000/0001-91) e carregados em 3 tabelas PostgreSQL: `bpa`, `bpp`, `dre`.
 
 ---
 
 ## Modelo de dados
 
-O projeto usa 3 tabelas com estrutura idêntica, representando os
-três demonstrativos financeiros da CVM:
+O projeto usa 3 tabelas com estrutura idêntica, representando os três demonstrativos financeiros da CVM:
 
 - `bpa` — Balanço Patrimonial Ativo
 - `bpp` — Balanço Patrimonial Passivo (inclui Patrimônio Líquido)
 - `dre` — Demonstração de Resultado
 
-Não há chaves estrangeiras formais entre as tabelas. O cruzamento
-é feito via `JOIN` usando `dt_refer` como critério de correspondência.
+Não há chaves estrangeiras formais entre as tabelas. O cruzamento é feito via `JOIN` usando `dt_refer` como critério de correspondência.
 
-A VIEW `indicadores_bb` consolida todos os indicadores em uma única
-consulta: `SELECT * FROM indicadores_bb;`
+A VIEW `indicadores_bb` consolida todos os indicadores em uma única consulta: `SELECT * FROM indicadores_bb;`
 
 ---
 
@@ -129,14 +122,9 @@ consulta: `SELECT * FROM indicadores_bb;`
 
 ## Nota metodológica — Índice de Eficiência
 
-O BB divulga o IE com base em metodologia gerencial interna
-("DRE realocado") que inclui itens como *Recuperação de Crédito*
-e *Descontos Concedidos* — contas que não existem separadamente
-no DFP público da CVM.
+O BB divulga o IE com base em metodologia gerencial interna ("DRE realocado") que inclui itens como *Recuperação de Crédito* e *Descontos Concedidos* — contas que não existem separadamente no DFP público da CVM.
 
-Nossa aproximação via dados públicos converge com os valores
-oficiais a partir de 2022 (diferença < 2 p.p.), validando a
-tendência mesmo que os valores absolutos de 2016-2019 difiram.
+Nossa aproximação via dados públicos converge com os valores oficiais a partir de 2022 (diferença < 2 p.p.), validando a tendência mesmo que os valores absolutos de 2016-2019 difiram.
 
 | Ano | Nossa métrica | Oficial BB |
 |:---:|:---:|:---:|
@@ -151,8 +139,7 @@ tendência mesmo que os valores absolutos de 2016-2019 difiram.
 
 ✅ Fase 1 concluída — Análise do Banco do Brasil (2016-2025)
 
-🔜 Fase 2 planejada — Expansão para análise setorial
-(Itaú, Bradesco, Santander, BB) com `UNION ALL`
+🔜 Fase 2 planejada — Expansão para análise setorial (Itaú, Bradesco, Santander, BB) com `UNION ALL`
 
 ---
 
